@@ -1,3 +1,4 @@
+# kodi-comparingFtpWithMysql
 Compare files on remote ftp to kodi mysql.
 
 Check the files that exist only on ftp in result.out
