@@ -12,7 +12,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Properties;
 
-String KODI_CONF = "/Users/nhnent/project/kodi/dist/kodi.conf";
+String KODI_CONF = "kodi.conf";
 List ftpFiles = new ArrayList<String>();
 List dbFiles = new ArrayList<String>();
 Properties properties = new Properties();
@@ -90,7 +90,6 @@ void readDatabase() throws Exception {
         }else {
             dbFiles.add(filePath.substring(filePath.indexOf(moviePath), filePath.length()));
         }
-        System.out.println("db : " + dbFiles.get(dbFiles.size()-1));
     }
 
     conn.close();
@@ -100,7 +99,6 @@ void readDatabase() throws Exception {
 void diffData() throws IOException {
     dbFiles.forEach(dbFile -> {
         ftpFiles.remove(dbFile);
-        System.out.println("ftpFile size: " + ftpFiles.size());
     });
 
     if(ftpFiles.isEmpty()) {
