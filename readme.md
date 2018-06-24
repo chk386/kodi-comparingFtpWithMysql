@@ -1,9 +1,10 @@
 Compare files on remote ftp to kodi mysql.
+
 Check the files that exist only on ftp in result.out
 
 # Prerequisites
-JDK9+ (jshell)
-kodi 17.6(20171114-a9a7a20)+
+- JDK9+ (jshell)
+- kodi 17.6(20171114-a9a7a20)+
 
 # Installation
 git clone https://github.com/chk386/kodi-comparingFtpWithMysql.git
@@ -24,11 +25,11 @@ movie.extensions=avi,mov,mp4,mkv
 ```
 
 # Run
-mac, linux : diff.sh
-windows : diff.bat
+- mac, linux : diff.sh
+- windows : diff.bat
 
-# 참고
-Windows did not test.
-Errors can be caused by ftp, mysql encoding.
-In that case, please report it.
+# Etc
+- Windows did not test.
+- Errors can be caused by ftp, mysql encoding.
+- In that case, please report it.
 
